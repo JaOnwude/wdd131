@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="This is WDD 131 - Dynamic Web Fundamentals, built by me Onwude James Uchenna. This shall serve as the landing page of this course.">
+    <meta name="author" content="Onwude James Uchenna">
+    <title>WDD 131 - Dynamic Web Fundamentals - Onwude James Uchenna</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
 <body>
-    <h1>Onwude James Uchenna!</h1>
-    <h3>...an aspiring Software Developer.</h3>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - <span class="yellow">Onwude James Uchenna</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/onwude-james-uchenna?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app#">LinkIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.webp" alt="hero image" width="130" class="float">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus qui ipsam inventore enim ut eligendi, esse repudiandae voluptatem alias possimus eum deleniti, similique blanditiis ratione in maiores provident dolor exercitationem.
+            Commodi culpa enim officiis, nobis facilis deserunt qui nam earum molestias officia maiores consequatur, rem, eum ab iste? Animi itaque nisi cumque consequatur odio odit commodi dolor doloribus vitae. Consequatur.
+            Autem optio corrupti perferendis. Consequuntur dicta modi maxime minima. Reprehenderit, totam enim, in vel accusantium ipsam officia perspiciatis atque laborum blanditiis veritatis quae  </p>
+            <h3>Enugu, Nigeria</h3>
+            <div>
+                <figure class="hero-img-container">
+                    <img src="images/nigerian-flag.jpg" alt="official flag of Nigeria" width="150" class="float">
+                    <figcaption>Official Flag of Nigeria</figcaption>
+                </figure>
+                <p class="county-paragraph">Nigeria, officially the Federal Republic of Nigeria, is a country in West Africa. It is situated between the Sahel
+                to the north and the Gulf of Guinea in the Atlantic Ocean to the south. It covers an area of 923,769 square kilometres
+                (356,669 sq mi). With a population of more than 230 million, it is the most populous country in Africa, and the world's
+                sixth-most populous country. Nigeria borders Niger in the north, Chad in the northeast, Cameroon in the east, and Benin
+                in the west. Nigeria is a federal republic comprising 36 states and the Federal Capital Territory, where its capital,
+                Abuja, is located. The largest city in Nigeria by population is Lagos.</p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="#">Dev.to Community</a></li>
+                <li><a href="#">Smashing Magazine</a></li>
+                <li><a href="#">CSS Tricks</a></li>
+                <li><a href="#">W3 Schools</a></li>
+                <li><a href="#">Udemyity</a></li>
+                <li><a href="#">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌷 Onwude James Uchenna 🌷 Enugu, Nigeria</p>
+        <p id="lastModified" class="yellow modified"></p>
+    </footer>
 </body>
 </html>

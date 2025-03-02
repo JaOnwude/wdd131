@@ -1,0 +1,123 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-gap: .25rem;
+    width: 98%;
+    margin: 0 auto;
+}
+
+footer {
+    padding: .5rem;
+}
+
+h1, h2, footer {
+    background-color: rgb(0 0 255);
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 0;
+    padding: .5rem;
+    border-radius: .5rem .5rem 0 0;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: .25rem;
+    border-bottom: 1px solid #333;
+    width: 65%;
+    margin: 0 auto;
+}
+
+nav {
+    margin-top: none;
+    padding: .5rem;
+}
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+    margin: .5rem;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+p {
+    padding: .5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+}
+
+ul li {
+    line-height: 1.5;
+}
+
+figcaption {
+    padding-top: .5rem;
+    margin-top: 100px;
+}
+
+ul li a:hover {
+    color: blue;
+}
+
+.card {
+    border: 1px solid #333;
+    border-radius: .5rem;
+    margin: .75rem 0;
+    padding-top: 0;
+    position: relative;
+}
+
+.hero-img-container {
+    float: left;
+}
+
+.float {
+    float: right;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.modified {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: smaller;
+}
+
+.county-paragraph {
+    margin-right: 15%;
+}

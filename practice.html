@@ -1,0 +1,265 @@
+<!-- <!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        li button {
+            font-size: 12px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        const list = document.querySelector('ul');
+        const input = document.querySelector('input');
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', () => {
+            const myItem = input.value;
+            input.value = '';
+
+            const listItem = document.createElement('li');
+            const listText = document.createElement('span');
+            const listBtn = document.createElement('button');
+
+            listItem.appendChild(listText);
+            listText.textContent = myItem;
+            listItem.appendChild(listBtn);
+            listBtn.textContent = 'Delete';
+            list.appendChild(listItem);
+
+            listBtn.addEventListener('click', () => {
+                list.removeChild(listItem);
+            });
+
+            input.focus();
+        });
+    </script>
+</body> -->
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping list example</title>
+    <style>
+        li {
+            margin-bottom: 10px;
+        }
+
+        li button {
+            font-size: 12px;
+            margin-left: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My shopping list</h1>
+
+    <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button>Add item</button>
+    </div>
+
+    <ul>
+
+    </ul>
+
+    <script>
+        const list = document.querySelector('ul');
+        const input = document.querySelector('#item');
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', function() {
+            let currentItem = input.value.trim();
+            input.value = '';
+
+            let listItem = document.createElement('li');
+            let span = document.createElement('span');
+            let deleteButton = document.createElement('button');
+
+            listItem.append(span);
+            listItem.append(deleteButton);
+            span.textContent = currentItem;
+            deleteButton.textContent = 'Delete'
+
+            list.append(listItem);
+
+            deleteButton.addEventListener('click', function() {
+                list.removeChild(listItem)
+            })
+
+            input.focus();
+        })
+    </script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+
+p {
+	margin: 1rem;
+	border: 1px solid rgb(0 0 0 /0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+	background-color: #eee;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: #ace;
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.  
+
+In most WDD courses there is a requirement to use a separate file. This part would go into a separate CSS file. 
+*/
+@media only screen and (min-width: 40em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
+
+    </style>
+
+</head>
+<body>
+    <h1>Responsive "Hamburger" &equiv; Menu</h1>
+    <p>Decrease the width of the Preview panel to observe the menu effect.</p>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        // Store the selected elements that we are going to use. This is not required but a good practice with larger programs where the variable will be referenced more than once.
+            const mainnav = document.querySelector('.navigation')
+            const hambutton = document.querySelector('#menu');
+
+            // Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
+            hambutton.addEventListener('click', () => {
+                mainnav.classList.toggle('show');
+                hambutton.classList.toggle('show');
+            });
+
+            /* ❔What does toggle mean?
+            We could write separate add and remove statements. Toggle adds the class if it does not currently exist or removes the class if it does exist. 
+            The CSS class rules will handle the different views, layouts, and displays.
+            🗝️ JavaScript only applies the class value or not.
+            */
+        
+
+    </script>
+</body>
+</html>
