@@ -6,7 +6,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-gap: .25rem;
-    width: 98%;
+    /* width: 98%; */
     margin: 0 auto;
 }
 
