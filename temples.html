@@ -8,63 +8,70 @@
     <title>Temples Gallery</title>
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/temples.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Temple Album</h1>
+        <p class="album-title-text">Temple Album</p>
         <nav>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Old</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Large</a></li>
-            <li><a href="#">Small</a></li>
-        </nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav><a id="menu" href="#"></a>
     </header>
     <main>
         <h1 class="full-length">Home</h1>
         <figure>
-            <img src="images/aba-nigeria-temple.jpg" alt="San Diego California image" width="200">
-            <figcaption>San Diego California</figcaption>
+            <img src="images/aba-nigeria-temple.jpg" alt="Aba Nigeria temple image" width="200">
+            <figcaption>Aba Nigeria Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/accra-ghana-temple.jpg" alt="San Diego California image" width="200">
-            <figcaption>San Diego California</figcaption>
+            <img src="images/accra-ghana-temple.jpg" alt="Accra Ghana Temple image" width="200">
+            <figcaption>Accra Ghana Temple</figcaption>
         </figure>
         <figure>
             <img src="images/adelaide-australia-temple.jpg" alt="San Diego California image" width="200">
             <figcaption>San Diego California</figcaption>
         </figure>
         <figure>
-            <img src="images/accra-ghana-temple.jpg" alt="San Diego California image" width="200">
-            <figcaption>San Diego California</figcaption>
+            <img src="images/accra-ghana-temple.jpg" alt="Accra Ghana Temple image" width="200">
+            <figcaption>Accra Ghana Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/atlanta-georgia-temple.jpg" alt="San Diego California image" width="200">
-            <figcaption>San Diego California</figcaption>
+            <img src="images/atlanta-georgia-temple.jpg" alt="Atlanta Georgia Temple image" width="200">
+            <figcaption>Atlanta Georgia Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/atlanta-georgia-temple.jpg" alt="San Diego California image" width="200">
-            <figcaption>San Diego California</figcaption>
+            <img src="images/atlanta-georgia-temple.jpg" alt="Atlanta Georgia Temple image" width="200">
+            <figcaption>Atlanta Georgia Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/Asuncion Paraguay Temple.jpeg" alt="San Diego California image" width="200">
-            <figcaption>San Diego California</figcaption>
-        </figure>
-        <figure>
-            <img src="images/belem_brazil_temple.jpg" alt="San Diego California image" width="200">
+            <img src="images/Asuncion-Paraguay-Temple.jpeg" alt="San Diego California image" width="200">
             <figcaption>San Diego California</figcaption>
         </figure>
         <figure>
             <img src="images/belem_brazil_temple.jpg" alt="San Diego California image" width="200">
-            <figcaption>San Diego California</figcaption>
+            <figcaption>Belem Brazil Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/accra-ghana-temple.jpg" alt="San Diego California image" width="200">
-            <figcaption>San Diego California</figcaption>
+            <img src="images/belem_brazil_temple.jpg" alt="Belem Brazil Temple image" width="200">
+            <figcaption>Belem Brazil Temple</figcaption>
         </figure>
         <figure>
-            <img src="images/Asuncion Paraguay Temple.jpeg" alt="San Diego California image" width="200">
-            <figcaption>San Diego California</figcaption>
+            <img src="images/accra-ghana-temple.jpg" alt="Accra Ghana Temple image" width="200">
+            <figcaption>Accra Ghana Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/Asuncion-Paraguay-Temple.jpeg" alt="Asuncion Paraguay Temple image" width="200">
+            <figcaption>Asuncion Paraguay Temple</figcaption>
         </figure>
         <figure>
             <img src="images/img-1.webp" alt="San Diego California image" width="200">
@@ -72,10 +79,8 @@
         </figure>
     </main>
     <footer>
-        &copy;2025 🌷 Onwude James Uchenna 🌷 Nigeria 
-        <div class="small">Last Modification: 03/14/2025 16:34:21</div>
+        <p>&copy;<span id="currentyear"></span> 🌷 Onwude James Uchenna 🌷 Enugu, Nigeria</p>
+        <p id="lastModified" class="yellow modified"></p>
     </footer>
-
-    <script src="scripts/temples.js"></script>
 </body>
 </html>
