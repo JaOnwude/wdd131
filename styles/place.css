@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #008000;
+    --secondary-color: #fff;
+    --padding: 1.5rem;
+}
+
+header {
+    background-color: rgb(249, 164, 26);
+    padding-bottom: 1rem;
+}
+
+h1, footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: var(--padding);
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.bold {
+    font-weight: 700;
+    margin-right: .5rem;
+    text-align: right;
+}
+
+span {
+    display: inline-block;
+}
+
+.data {
+    margin: 1rem 0 1.5rem 0;
+}
+
+.data-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.up {
+    border-bottom: 1px solid #fa8a68;
+    padding-bottom: .75rem;
+}
+
+.weather-icon {
+    /* display: inline-block; */
+    margin-bottom: 1rem;
+}
+
+picture {
+    background-color: var(--primary-color);
+}
+
+footer {
+    margin-top: 1rem;
+}
+
+.modified {
+    color: var(--secondary-color);
+    padding-top: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .hero-image {
+        background-image: image-set("../images/hero-medium.webp");
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        position: relative;
+    }
+
+    .up {
+        position: absolute;
+        top: 20px;
+        left: 17px;
+        background-color: rgba(255 255 255 / 0.8);
+        border-bottom: none;
+        padding: 4rem 5px 5px 5px;
+    }
+
+    .down {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        background-color: rgba(255 255 255 / 0.8);
+        padding: 4rem 5px 5px 5px;
+    }
+
+    h2 {
+        background-color: var(--primary-color);
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        width: 80%;
+        color: var(--secondary-color);
+        padding: .25rem;
+
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    .weather::after {
+        content: "⛅";
+        margin-left: 22px;
+        font-size: 28px;
+    }
+}

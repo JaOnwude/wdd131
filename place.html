@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This single-paged site tries to convey the beauty of Abuja Metropolis to the world which I was lucky enough to experience firsthand recently">
+    <meta name="Author" content="Onwude James Uchenna">
+    <title>Abuja</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="min-width: 1000px">
+                <source srcset="images/hero-medium.webp" media="min-width: 600px">
+                <img src="images/hero-small.webp" alt="hero-image-sm" width="400" height="300" class="hero-image">
+            </picture>
+        </div>
+        <section class="data-container up">
+            <h2 class="data">Data</h2>
+            <div class="data-details">
+                <span class="bold">Area:</span><span>487,634 sq km</span>
+            </div>
+            <div class="data-details">
+                <span class="bold">Population:</span><span>2,457,634</span>
+            </div>
+            <div class="data-details">
+                <span class="bold">Capital:</span><span>Abuja</span>
+            </div>
+            <div class="data-details">
+                <span class="bold">Languages:</span><span>English, Hausa, Igbo</span>
+            </div>
+            <div class="data-details">
+                <span class="bold">Currency:</span><span>Nigerian Naira</span>
+            </div>
+            <div class="data-details">
+                <span class="bold">Timezone:</span><span>GMT+1</span>
+            </div>
+            <div class="data-details">
+                <span class="bold">Calling Code:</span><span>+234</span>
+            </div>
+            <div class="data-details">
+                <span class="bold">Internet TLD:</span><span>.ng</span>
+            </div>
+        </section>
+        <section class="data-container down">
+            <h2 class="data weather">Weather</h2>
+            <img src="images/weather-icon.svg" alt="Weather Icon" width="70" height="auto" class="weather-icon">
+            <div class="data-details">
+                <span class="bold">Temperature:</span><span id="temperature">10&deg;C</span>
+            </div>
+            <div class="data-details">
+                <span class="bold">Conditions:</span><span>Partly Cloudy</span>
+            </div>
+            <div class="data-details">
+                <span class="bold">Wind:</span><span id="wind">5 km/h</span>
+            </div>
+            <div class="data-details">
+                <span class="bold">Windchill:</span><span id="windchill">9.8&deg;C</span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌷 Onwude James Uchenna 🌷 Nigeria</p>
+        <p id="lastModified" class="yellow modified"></p>
+    </footer>
+</body>
+</html>
