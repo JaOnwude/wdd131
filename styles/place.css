@@ -10,6 +10,10 @@
     --padding: 1.5rem;
 }
 
+body {
+    font-family: Roboto, Nunito, Arial, Helvetica, sans-serif;
+}
+
 header {
     background-color: rgb(249, 164, 26);
     padding-bottom: 1rem;
@@ -74,13 +78,6 @@ footer {
 .modified {
     color: var(--secondary-color);
     padding-top: 1rem;
-}
-
-@media screen and (min-width: 600px) {
-    .hero-image {
-        background-image: image-set("../images/hero-medium.webp");
-    }
-
 }
 
 @media screen and (min-width: 1000px) {
