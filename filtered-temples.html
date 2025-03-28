@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page showcases a picture album that is responsive in small and larger views. It utilizes a 'hamburger' menu and responds to user requests">
+    <meta name="author" content="Onwude James Uchenna">
+    <title>Temples Gallery</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <ul class="navigation">
+                <li class="home"><a href="#">Home</a></li>
+                <li class="old"><a href="#">Old</a></li>
+                <li class="new"><a href="#">New</a></li>
+                <li class="large"><a href="#">Large</a></li>
+                <li class="small"><a href="#">Small</a></li>
+            </ul>
+        </nav><a id="menu" href="#"></a>
+    </header>
+    <main>
+        <h2 class="home-length">Home</h2>
+        <div id="res-grid"></div>     
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌷 Onwude James Uchenna 🌷 Enugu, Nigeria</p>
+        <p id="lastModified" class="yellow modified"></p>
+    </footer>
+</body>
+</html>
