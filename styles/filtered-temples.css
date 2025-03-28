@@ -71,7 +71,7 @@ nav a:hover {
 
 figure {
     border: 2px solid black;
-    min-width: 200px;
+    min-width: 300px;
     border-radius: .25rem;
 }
 
@@ -117,7 +117,7 @@ figure img {
 }
 
 section span:nth-child(1) {
-    font-size: smaller;
+    /* font-size: smaller; */
     font-weight: 400;
     color: #a21ca2;
     font-weight: bold;
@@ -162,12 +162,16 @@ section span:nth-child(1) {
     content: "X";
 }
 
+section p {
+    line-height: 0;
+    padding: 0;
+    margin: 15px;
+}
 
 @media only screen and (min-width: 400px) {
     #res-grid {
         display: grid;
         grid-template-columns: 1fr;
-        margin-left: 10;
     }
 
     header {
@@ -192,14 +196,7 @@ section span:nth-child(1) {
         grid-gap: 10px;
     }
 
-    section p {
-        font-size: x-small;
-    }
-
-        p:nth-child(1) {
-            font-size: small;
-            font-weight: 500;
-        }
+   
     .home-length {
         display: grid;
         grid-column: 1/3;
