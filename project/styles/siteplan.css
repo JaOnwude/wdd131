@@ -87,3 +87,10 @@ span:nth-child(1) {
     font-weight: 600;
     margin-right: 6px;
 }
+
+.wireframe {
+    display: inline-block;
+    color: #2626e1;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
