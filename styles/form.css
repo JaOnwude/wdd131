@@ -53,6 +53,12 @@ form {
     display: grid;
 }
 
+.product-name {
+    display: inline-block;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
 .overall {
     display: flex;
     justify-content: space-around;
