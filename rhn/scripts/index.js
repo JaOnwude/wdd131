@@ -22,6 +22,17 @@ hamburgerBtn.addEventListener('click', () => {
 });
 
 
+document.getElementById('review-counter').textContent `Reviews completed: ${reviewCounter}`;
+document.querySelector("#review-form").addEventListener('submit', () => {
+    reviewCounter++;
+    localStorage.setItem('reviewCounter', reviewCounter);
+})
+
+document.getElementById('review-counter').innerText = `Reviews completed: ${reviewCounter}`;
+
+
+
+
 const apartments = [
     {
         name: "1 Bedroom Mini Flat (room and parlour) for rent",
