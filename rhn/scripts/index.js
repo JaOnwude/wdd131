@@ -1,5 +1,4 @@
-
-
+let reviewCounter = localStorage.getItem("reviewCounter") || 0;
 const currentYear = document.querySelector('#currentyear');
 currentYear.textContent = new Date().getFullYear();
 const mainNav = document.querySelector('.navigation');
@@ -20,17 +19,6 @@ hamburgerBtn.addEventListener('click', () => {
     mainNav.classList.toggle('show');
     hamburgerBtn.classList.toggle('show');
 });
-
-
-document.getElementById('review-counter').textContent `Reviews completed: ${reviewCounter}`;
-document.querySelector("#review-form").addEventListener('submit', () => {
-    reviewCounter++;
-    localStorage.setItem('reviewCounter', reviewCounter);
-})
-
-document.getElementById('review-counter').innerText = `Reviews completed: ${reviewCounter}`;
-
-
 
 
 const apartments = [
@@ -252,3 +240,10 @@ priceRange.addEventListener("click", () => {
 
 
 
+document.getElementById('review-counter').innerText = `Reviews completed: ${reviewCounter}`;
+document.querySelector("#review-form").addEventListener('submit', () => {
+    reviewCounter++;
+    localStorage.setItem('reviewCounter', reviewCounter);
+})
+
+document.getElementById('review-counter').innerText = `Reviews completed: ${reviewCounter}`;

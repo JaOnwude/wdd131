@@ -4,22 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Bringing affordable housing to people in Nigeria is our top priority. In this regard, this site is dedicated to making available information about houses for rentage in Nigeria">
+    <meta name="description" content="Bringing affordable housing to people in Nigeria is our top priority. In this regard, this site is dedicated to making available information about houses for rentage in Nigeria">
     <meta name="Author" content="Onwude James Uchenna">
     <title>RentHub360 - Nigeria</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000 family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="logo" width="70" , height="70">
+        <img src="images/logo.png" alt="logo" width="70" height="70">
         <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="apartments.html">Apartments</a>
@@ -29,9 +26,20 @@
         <a id="menu" href="#"></a>
     </header>
     <main>
-        <h1>Apartment Hub</h1>
+        <h1>RentHub360 - Nigeria</h1>
+        <section class="hero-section">
+            <img src="images/belem_brazil_temple.jpg" alt="hero image" width="400" height="200">
+            <h2>Your Apartment Rental Guide</h2>
+            <p class="list-btn">
+                <a href="list.html">List Your Properties</a>
+            </p>
+            <p class="apartment-search-btn">
+                <a href="apartments.html">Search Apartments</a>
+            </p>
+        </section>
+        <h2>Apartment Hub</h2>
         <section>
-            <h2>Quick Searches</h2>
+            <h4>Quick Searches</h4>
             <ul class="multi-search">
                 <li id="price">By Price Range</li>
                 <li id="location">By Location</li>
@@ -39,16 +47,16 @@
                 <li id="apartmentType">By Apartment Type</li>
             </ul>
         </section>
-        <section>
+        <div>
             <div id="apartment-wrapper"></div>
-        </section>
+        </div>
     </main>
     <footer>
-        <p>
+        <div>
         <p>&copy;<span id="currentyear"></span> 🌲 RentHub360 Nigeria</p>
         <!-- <p id="lastModified" class="yellow modified"></p> -->
 
-        </p>
+        </div>
         <nav class="social-media-links">
             <a href="http://www.facebook.com"><img src="images/facebook-icon.webp" alt="facebook-icon" width="20"
                     height="20"></a>

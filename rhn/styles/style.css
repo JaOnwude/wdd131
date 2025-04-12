@@ -17,7 +17,7 @@ body {
 
 /* Header Styling */
 h1,
-h2 {
+h2, h4 {
     color: var(--primary-color);
     text-align: center;
 }
@@ -446,7 +446,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    button {
+    p {
         padding: 1rem;
             background-color: #000080;
             border: 2px solid whitesmoke;
@@ -464,6 +464,7 @@ body {
             transition: 400ms ease-out;
         }
     }
+
     .pointed-finger {
         padding-bottom: .5rem;
         font-size: 2rem;
