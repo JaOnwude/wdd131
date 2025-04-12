@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bringing affordable housing to people in Nigeria is our top priority. In this regard, this site is dedicated to making available information about houses for rentage in Nigeria">
+    <meta name="Author" content="Onwude James Uchenna">
+    <title>RentHub360 - Nigeria</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000 family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo" width="70" , height="70">
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="apartments.html">Apartments</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <a id="menu" href="#"></a>
+    </header>
+    <main>
+        <h1>RentHub360 - Nigeria</h1>
+        <section class="hero-section">
+            <img src="images/belem_brazil_temple.jpg" alt="hero image" width="400" height="200">
+            <h2>Your Apartment Rental Guide</h2>
+            <button class="list-btn"><a href="list.html">List Your Properties</a></button>
+            <button class="apartment-search-btn"><a href="apartments.html">Search Apartments</a></button>
+        </section>
+        <section>
+                <h2>Product Review</h2>
+                <form method="get" action="review.html" class="wf1" id="review-form">
+                    <fieldset>
+                        <label> <span class="product-name">Product Name</span>
+                            <select name="products" id="productsOption" required>
+                                <option class="option-1" value="" selected disabled>Choose a Product...&#9662;</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset class="overall">
+                        <legend class="overall-rating">Overall Rating</legend>
+                        <span>
+                            <label for="star-1">&star;</label>
+                            <input name="star" id="star-1" type="radio" required>
+                        </span>
+                        <span>
+                            <label for="star-2">&star;&star;</label>
+                            <input name="star" id="star-2" type="radio" required>
+                        </span>
+                        <span>
+                            <label for="star-3">&star;&star;&star;</label>
+                            <input name="star" id="star-3" type="radio" required>
+                        </span>
+                        <span>
+                            <label for="star-4">&star;&star;&star;&star;</label>
+                            <input name="star" id="star-4" type="radio" required>
+                        </span>
+                        <span>
+                            <label for="star-5">&star;&star;&star;&star;&star;</label>
+                            <input name="star" id="star-5" type="radio" required>
+                        </span>
+                        <!-- <div class="star-rating">
+                                <input type="radio" name="stars" id="star-a" value="5" />
+                                <label for="star-a"></label>
+                            
+                                <input type="radio" name="stars" id="star-b" value="4" />
+                                <label for="star-b"></label>
+                            
+                                <input type="radio" name="stars" id="star-c" value="3" />
+                                <label for="star-c"></label>
+                            
+                                <input type="radio" name="stars" id="star-d" value="2" />
+                                <label for="star-d"></label>
+                            
+                                <input type="radio" name="stars" id="star-e" value="1" />
+                                <label for="star-e"></label>
+                            </div> -->
+                    </fieldset>
+                    <fieldset>
+                        <legend>Date of Staying</legend>
+                        <label><input type="date" name="installation" id="installation" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Which features did you find useful in the product? <br>(Check all that apply)</legend>
+                        <label><input type="checkbox" name="durability" id="durability" value="durability">Facilities/Equipment</label>
+                        <label><input type="checkbox" name="ease" id="ease" value="Ease of use">Neatness</label>
+                        <label><input type="checkbox" name="performance" id="performance" value="performance">Customer's Service</label>
+                        <label><input type="checkbox" name="design" id="design" value="design">Serenity</label>
+                    </fieldset>
+                    <fieldset>
+                        <!-- <legend></legend> -->
+                        <label for="textarea">Written Review(Optional)</label>
+                        <textarea class="written-review" name="written-review" id="textarea"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <!-- <legend></legend> -->
+                        <label class="reviewer-name">Your Name(Optional)<input type="text" name="reviewer" id="reviewer"></label>
+                    </fieldset>
+                    <input type="submit" value="Post Review">
+                </form>
+        </section>
+    <footer>
+        <p>
+        <p>&copy;<span id="currentyear"></span> 🌲 RentHub360 Nigeria</p>
+        <!-- <p id="lastModified" class="yellow modified"></p> -->
+
+        </p>
+        <nav class="social-media-links">
+            <a href="http://www.facebook.com"><img src="images/facebook-icon.webp" alt="facebook-icon" width="20"
+                    height="20"></a>
+            <a href="http://www.tiktok.com.com"><img src="images/tiktok-icon.webp" alt="tiktok-icon" width="20"
+                    height="20"></a>
+            <a href="http://www.twitter.com"><img src="images/X-icon.webp" alt="X-icon-icon" width="20" height="20"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>

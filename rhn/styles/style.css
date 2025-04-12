@@ -1,0 +1,536 @@
+/* General Resettings */
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variable Settings */
+:root {
+    --primary-color: #0e06ac;
+    --secondary-color: #34C759;
+    --accent1-color: #FFC107;
+    --accent2-color: #964B00;
+    --sm-border: 1px solid #000;
+}
+
+/* Header Styling */
+h1,
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: .5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a {
+    color: var(--primary-color);
+    padding: .25rem;
+}
+
+header nav a:hover {
+    color: bisque;
+    transition: 400ms ease-in-out;
+    text-decoration: none;
+}
+
+/* Hero Section Styling */
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+.hero-section {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section h2 {
+    position: absolute;
+    top: 10px;
+    left: 20%;
+}
+
+.list-btn, .apartment-search-btn {
+    padding: 1rem;
+    background-color: #000080;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+}
+
+.list-btn {
+    display: none;
+}
+
+.list-btn a,
+.apartment-search-btn a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+a {
+    color: #fff;
+}
+
+.list-btn a:hover,
+.apartment-search-btn a:hover {
+    text-decoration: underline;
+    color: greenyellow;
+    transition: 400ms ease-out;
+}
+
+.list-btn {
+    position: absolute;
+    left: 10px;
+    bottom: 1.2rem;
+}
+
+.apartment-search-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 1.2rem;
+}
+
+/* Featured Apartments Styling */
+.apartment-container {
+    max-width: 300px;
+    background-color: #eee;
+    margin: 5px auto;
+    padding: 10px;
+    border: var(--sm-border);
+    border-radius: 8px;
+    .location-emoji {
+        width: 15px;
+        height: 14px;
+        display: inline;
+        margin: 0 5px -3px 5px;
+    
+    }
+}
+
+.apartment-container img {
+    width: 80%;
+    display: block;
+    height: auto;
+    margin: 5px auto;
+    border: var(--sm-border);
+}
+
+.apartment-container span:nth-child(1) {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.apartment-container button {
+    padding: .5rem;
+    background-color: #000080;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    min-width: 150px;
+}
+
+.apartment-container button a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.apartment-container button a:hover {
+    text-decoration: underline;
+    color: greenyellow;
+    transition: 400ms ease-out;
+}
+
+.featured-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -3px;
+}
+
+/* Testimonials Section Styling */
+.testimonials-section {
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.testimonials-container {
+    max-width: 300px;
+    background-color: #eee;
+    margin: 5px auto;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    span:nth-child(1) {
+        font-weight: 700;
+        margin-right: 10px;
+    }
+}
+
+.testimonials-container figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 150px;
+        height: 150px;
+        border: var(--sm-border);
+        border-radius: 50%;
+    }
+}
+
+/* Footer Styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: .5rem;
+    margin-top: 1rem;
+    nav img {
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+    } 
+    nav a, span, p {
+        color: #000;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    #apartment-wrapper,
+    #testimonials-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        padding-left: 1.2rem;
+    }
+
+    .testimonials-container,
+    .apartment-container {
+        margin: 5px;
+    }
+
+    .list-btn {
+        display: none;
+    }
+
+    .hero-section h2 {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #apartment-wrapper,
+    #testimonials-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        padding-left: 2.2rem;
+    }
+
+    .testimonials-container,
+    .apartment-container {
+        margin: 5px;
+    }
+
+    .list-btn {
+        display: block;
+    }
+
+    .hero-section h2 {
+        position: absolute;
+        top: 10px;
+        left: 37%;
+    }
+
+    .wf1 {
+        margin: 1rem auto;
+        max-width: 800px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .navigation {
+        display: flex;
+        margin-right: 1rem;
+        }
+
+        .navigation a {
+            text-align: center;
+            color: #000;
+        }
+
+        #menu {
+            display: none;
+        }
+    }
+}
+
+/* Apartments Page Styling */
+.multi-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    li {
+        list-style-type: none;
+        background-color: #333;
+        color: #fff;
+        padding: 5px;
+        margin: 10px 2px;
+        border-radius: 5px;
+    }
+
+    li:hover {
+        transition: 400ms ease-in;
+        color: #94487d;
+        cursor: pointer;
+    }
+}
+
+
+/* Form Styilng */
+form {
+    background-color: #8e7f9b3e;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+}
+
+.product-name {
+    display: inline-block;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+.overall {
+    display: flex;
+    justify-content: space-around;
+}
+
+.overall span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overall label {
+    font-size: 20px;
+    color: #000;
+}
+
+.wf1 input[type="radio"] {
+    /* width: 20px;
+    height: 20px;
+    border: 2px solid #8e7f9b35; */
+    transform: scale(1.5);
+}
+
+.written-review {
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    font-family: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+.wf1 fieldset {
+    margin: .5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem 2%;
+}
+
+.wf1 legend {
+    color: navy;
+    padding: .5rem 0 5px 0;
+    margin-bottom: -1rem;
+}
+
+.wf1 label {
+    display: block;
+    color: navy;
+    font-size: .9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 input[type="number"] {
+    background-color: aliceblue;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="submit"] {
+    border: 1px solid #afafaf;
+    background-color: #f3eded;
+    color: navy;
+    /* border-radius: 6px; */
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1rem;
+}
+
+.wf1 input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.review-box {
+    border-top: 1px solid #999;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button {
+        padding: 1rem;
+            background-color: #000080;
+            border: 2px solid whitesmoke;
+            border-radius: 8px;
+            min-width: 150px;
+        a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: greenyellow;
+            transition: 400ms ease-out;
+        }
+    }
+    .pointed-finger {
+        padding-bottom: .5rem;
+        font-size: 2rem;
+    }
+
+}
+
+.fig-items {
+    display: flex;
+    justify-content: space-evenly;
+
+    figure {
+        width: 300px;
+
+        img {
+            width: 100%;
+            height: 100px;
+        }
+
+        ficaption {
+            font-weight: bolder;
+            font-size: small;
+        }
+    }
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    /* background-color: #eee; */
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation  {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    transition: 0.5s ease-out;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: #eee;
+    transition: 600ms ease-in-out;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu.show::before {
+    content: "X";
+}
